@@ -7,38 +7,63 @@
     android:layout_height="match_parent"
     tools:context=".SignUp"
     android:background="@color/signUpBG">
-    <ImageView
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:background="@drawable/previous_icon"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="20dp"
-        />
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Socially"
-            android:textColor="@color/white"
-            android:textSize="60sp"
 
-           />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/previous_icon"
+                android:layout_gravity="center_vertical"
+
+
+
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sociallyText"
+                android:textColor="@color/white"
+                android:textSize="50sp"
+                android:gravity="center"
+
+                />
+            <!-- Another spacer to balance -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Create An Account and Sign Up"
+            android:text="@string/create_an_account_and_sign_up"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textAlignment="center"
             />
         <RelativeLayout
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginTop="20dp">
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/dp"
@@ -57,16 +82,183 @@
 
         </RelativeLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Username"
-            />
-        <EditText
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:textColor="@color/white"
-            android:backgroundTint="@color/white"/>
+            android:layout_height="70dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+
+                />
+            <EditText
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/white"
+                android:hint="Enter Username"
+                android:textColorHint="@color/lightGray"
+                android:inputType="text"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Name"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                />
+            <EditText
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/white"
+                android:hint="Enter Your Name"
+                android:textColorHint="@color/lightGray"
+                android:inputType="text"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Last Name"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                />
+            <EditText
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/white"
+                android:hint="Enter Last Name"
+                android:textColorHint="@color/lightGray"
+                android:inputType="text"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                />
+            <EditText
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/white"
+                android:hint="Enter Date of irth"
+                android:textColorHint="@color/lightGray"
+                android:inputType="date"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-mail"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                />
+            <EditText
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/white"
+                android:hint="Enter E-mail"
+                android:textColorHint="@color/lightGray"
+                android:inputType="textEmailAddress"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                />
+            <EditText
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/white"
+                android:hint="Enter Password"
+                android:textColorHint="@color/lightGray"
+                android:inputType="textPassword"/>
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/signup_rounded_button"
+            android:text="Create an Account"
+            android:textAllCaps="false"
+            android:textColor="@color/signUpBtnTxt"
+            android:textSize="20sp"/>
+
+
+
+
+
 
 
 

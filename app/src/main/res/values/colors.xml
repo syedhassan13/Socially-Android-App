@@ -6,8 +6,26 @@
     <color name="lightGray">#D3D3D3</color>
     <color name="darkGray">#A9A9A9</color>
     <color name="signUpBG">#99413F</color>
+    <color name="signUpBtnBg">#B27273</color>
+    <color name="signUpBtnTxt">#BA9091</color>
+    <color name="sociallyLightBrown">#9A5A5B</color>
+    <color name="sociallyLightestBrown">#D19F9E</color>
+    <color name="edit_bg">#FFFFFFFF</color>
+    <color name="edit_border">#E0E0E0</color>
+    <color name="edit_border_focused">#6200EE</color>
+    <color name="hint_color">#BDBDBD</color>
+    <color name="text_color">#0C1014</color>
+    <color name="mid_gray">#A8A8A8</color>
 
-    99413F
+    A8A8A8
+
+
+
+
+
+
+
+
 
 
 
