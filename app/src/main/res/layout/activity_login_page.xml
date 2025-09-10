@@ -8,18 +8,28 @@
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".LoginPage"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:weightSum="10"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:gravity="center">
+        android:layout_height="0dp"
+        android:gravity="start|center"
+        android:layout_weight="1"
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/chevron_left"/>
+
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="0dp"
+        android:layout_weight="2"
         android:gravity="center">
         <TextView
             android:layout_width="wrap_content"
@@ -31,12 +41,14 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="370dp"
+        android:layout_height="0dp"
+        android:layout_weight="5"
         android:orientation="vertical"
-        android:gravity="center_horizontal">
+        android:gravity="center_horizontal"
+        android:weightSum="5">
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="0dp"
             android:background="@drawable/login_page_edit_text"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
@@ -46,11 +58,13 @@
             android:textColor="@color/text_color"
             android:hint="User Name"
             android:inputType="text"
+            android:layout_weight="1"
+
 
             />
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="0dp"
             android:background="@drawable/login_page_edit_text"
             android:layout_marginTop="15dp"
             android:paddingStart="16dp"
@@ -60,14 +74,16 @@
             android:textColorHint="@color/hint_color"
             android:textColor="@color/text_color"
             android:hint="Password"
-            android:inputType="textPassword"/>
+            android:inputType="textPassword"
+            android:layout_weight="1"/>
         
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="0dp"
             android:gravity="end"
             android:layout_marginTop="15dp"
-            android:layout_marginRight="10dp">
+            android:layout_marginRight="10dp"
+            android:layout_weight="1">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -79,7 +95,7 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="370dp"
-            android:layout_height="60dp"
+            android:layout_height="0dp"
             android:background="@drawable/signup_rounded_button"
             android:backgroundTint="@color/sociallyLightestBrown"
             android:layout_marginTop="15dp"
@@ -88,13 +104,15 @@
             android:textSize="20sp"
             android:textAllCaps="false"
             android:layout_marginRight="10dp"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"/>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             android:gravity="bottom|center"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_weight="1">
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="2dp"
@@ -119,13 +137,16 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:weightSum="3">
         
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:gravity="bottom|center">
+            android:layout_height="0dp"
+            android:gravity="bottom|center"
+            android:layout_weight="1">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -144,9 +165,10 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:layout_height="0dp"
+            android:gravity="bottom|center"
+            android:orientation="vertical"
+            android:layout_weight="1">
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="2dp"
@@ -158,9 +180,10 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             android:orientation="vertical"
-            android:gravity="top|center">
+            android:gravity="bottom|center"
+            android:layout_weight="1">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
