@@ -1,31 +1,16 @@
 package com.hassan.i230519
 
-import android.content.Intent
 import android.os.Bundle
-import android.os.Looper
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.os.postDelayed
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import android.os.Handler
 
-
-class SplashScreen : AppCompatActivity() {
+class CallingPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_splash_screen)
-
-        Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this, RegistrationPage::class.java)
-            startActivity(intent)
-            finish()
-        },2000)
-
-
-
-
+        setContentView(R.layout.activity_calling_page)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -33,5 +18,3 @@ class SplashScreen : AppCompatActivity() {
         }
     }
 }
-
-

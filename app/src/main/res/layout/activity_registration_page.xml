@@ -36,6 +36,7 @@
         android:gravity="center"
         android:layout_weight="3">
         <de.hdodenhof.circleimageview.CircleImageView
+
             android:id="@+id/dp"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -52,6 +53,7 @@
             android:textSize="25sp"
             android:textColor="@color/black"/>
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/logintn"
             android:layout_width="350dp"
             android:layout_height="70dp"
             android:background="@drawable/signup_rounded_button"
@@ -102,6 +104,7 @@
                 android:textSize="18sp"
                 android:textColor="@color/sociallyLightBrown"/>
             <TextView
+                android:id="@+id/signupText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sign up "
