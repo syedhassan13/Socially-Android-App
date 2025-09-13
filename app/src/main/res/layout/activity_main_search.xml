@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/white"
-    android:weightSum="10"
+    android:weightSum="9"
     tools:context=".MainSearch">
 
     <RelativeLayout
@@ -22,25 +22,29 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="100dp"
             android:gravity="center_vertical"
-            android:layout_centerVertical="true">
+            android:layout_centerVertical="true"
+            android:weightSum="6">
             <ImageView
-                android:layout_width="25dp"
+                android:layout_width="0dp"
                 android:layout_height="25dp"
+                android:layout_weight="1"
                 android:src="@drawable/search_black"/>
 
             <EditText
-                android:layout_width="230dp"
+                android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:hint="Search"
                 android:background="@drawable/search_box"
                 android:textColorHint="@color/darkGray"
                 android:textSize="24sp"
                 android:textColor="@color/black"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginLeft="10dp"
+                android:layout_weight="4"/>
             <ImageView
-                android:layout_width="15dp"
+                android:layout_width="0dp"
                 android:layout_height="15dp"
                 android:src="@drawable/union_black"
+                android:layout_weight="1"
 
 
 
@@ -63,5 +67,824 @@
 
 
     </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:weightSum="4"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="15dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+          >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Top"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Account"
+                android:textSize="22sp"
+                android:textColor="@color/darkGray"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tags"
+                android:textSize="22sp"
+                android:textColor="@color/darkGray"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Places"
+                android:textSize="22sp"
+                android:textColor="@color/darkGray"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="10dp"
+
+                android:src="@drawable/sepreate_line_black" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="10dp"
+
+                android:src="@drawable/sepreate_line_white" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="8">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center">
+
+
+
+
+
+                        <RelativeLayout
+                            android:layout_width="90dp"
+                            android:layout_height="90dp">
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:src="@color/blue"
+                                app:civ_border_width="2dp"
+                                android:padding="4dp"
+                                android:layout_marginRight="15dp"
+                                app:civ_border_color="@android:color/white"
+                                android:scaleType="centerCrop"
+                                android:layout_centerInParent="true"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="IS"
+                                android:textSize="27sp"
+                                android:layout_centerInParent="true"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"/>
+
+                        </RelativeLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="internashala"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="internashala"
+                                android:textColor="@color/darkGray"
+                                android:textSize="16sp"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center">
+
+
+
+
+
+                        <RelativeLayout
+                            android:layout_width="90dp"
+                            android:layout_height="90dp">
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:src="@color/white"
+                                app:civ_border_width="2dp"
+                                android:padding="4dp"
+                                android:layout_marginRight="15dp"
+                                app:civ_border_color="@color/black"
+                                android:scaleType="centerCrop"
+                                android:layout_centerInParent="true"
+
+
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="#"
+                                android:textSize="40sp"
+                                android:layout_centerInParent="true"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+
+                        </RelativeLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="#internashala"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1000+ post"
+                                android:textColor="@color/darkGray"
+                                android:textSize="16sp"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center">
+
+
+
+
+
+                        <RelativeLayout
+                            android:layout_width="90dp"
+                            android:layout_height="90dp">
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:src="@color/white"
+                                app:civ_border_width="2dp"
+                                android:padding="4dp"
+                                android:layout_marginRight="15dp"
+                                app:civ_border_color="@color/black"
+                                android:scaleType="centerCrop"
+                                android:layout_centerInParent="true"
+
+
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="#"
+                                android:textSize="40sp"
+                                android:layout_centerInParent="true"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+
+                        </RelativeLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="#internashala"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1000+ post"
+                                android:textColor="@color/darkGray"
+                                android:textSize="16sp"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center">
+
+
+
+
+
+                        <RelativeLayout
+                            android:layout_width="90dp"
+                            android:layout_height="90dp">
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:src="@color/white"
+                                app:civ_border_width="2dp"
+                                android:padding="4dp"
+                                android:layout_marginRight="15dp"
+                                app:civ_border_color="@color/black"
+                                android:scaleType="centerCrop"
+                                android:layout_centerInParent="true"
+
+
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="#"
+                                android:textSize="40sp"
+                                android:layout_centerInParent="true"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+
+                        </RelativeLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="#internashala"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1000+ post"
+                                android:textColor="@color/darkGray"
+                                android:textSize="16sp"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center">
+
+
+
+
+
+                        <RelativeLayout
+                            android:layout_width="90dp"
+                            android:layout_height="90dp">
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:src="@color/white"
+                                app:civ_border_width="2dp"
+                                android:padding="4dp"
+                                android:layout_marginRight="15dp"
+                                app:civ_border_color="@color/black"
+                                android:scaleType="centerCrop"
+                                android:layout_centerInParent="true"
+
+
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="#"
+                                android:textSize="40sp"
+                                android:layout_centerInParent="true"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+
+                        </RelativeLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="#internashala"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1000+ post"
+                                android:textColor="@color/darkGray"
+                                android:textSize="16sp"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center">
+
+
+
+
+
+                        <RelativeLayout
+                            android:layout_width="90dp"
+                            android:layout_height="90dp">
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:src="@color/white"
+                                app:civ_border_width="2dp"
+                                android:padding="4dp"
+                                android:layout_marginRight="15dp"
+                                app:civ_border_color="@color/black"
+                                android:scaleType="centerCrop"
+                                android:layout_centerInParent="true"
+
+
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="#"
+                                android:textSize="40sp"
+                                android:layout_centerInParent="true"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+
+                        </RelativeLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="#internashala"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1000+ post"
+                                android:textColor="@color/darkGray"
+                                android:textSize="16sp"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center">
+
+
+
+
+
+                        <RelativeLayout
+                            android:layout_width="90dp"
+                            android:layout_height="90dp">
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:src="@color/white"
+                                app:civ_border_width="2dp"
+                                android:padding="4dp"
+                                android:layout_marginRight="15dp"
+                                app:civ_border_color="@color/black"
+                                android:scaleType="centerCrop"
+                                android:layout_centerInParent="true"
+
+
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="#"
+                                android:textSize="40sp"
+                                android:layout_centerInParent="true"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+
+                        </RelativeLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="#internashala"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1000+ post"
+                                android:textColor="@color/darkGray"
+                                android:textSize="16sp"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center">
+
+
+
+
+
+                        <RelativeLayout
+                            android:layout_width="90dp"
+                            android:layout_height="90dp">
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:src="@color/white"
+                                app:civ_border_width="2dp"
+                                android:padding="4dp"
+                                android:layout_marginRight="15dp"
+                                app:civ_border_color="@color/black"
+                                android:scaleType="centerCrop"
+                                android:layout_centerInParent="true"
+
+
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="#"
+                                android:textSize="40sp"
+                                android:layout_centerInParent="true"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+
+                        </RelativeLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="#internashala"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1000+ post"
+                                android:textColor="@color/darkGray"
+                                android:textSize="16sp"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="10dp"
+            android:src="@drawable/line"
+
+            />
+
+    </LinearLayout>
 
 </LinearLayout>
