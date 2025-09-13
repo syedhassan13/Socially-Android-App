@@ -18,6 +18,10 @@
     <color name="mid_gray">#A8A8A8</color>
     <color name="calling_bg">#9A5A5B</color>
     <color name="calling_icon_red">#FE0000</color>
+    <color name="search_box_color">#EFEFEF</color>
+    <color name="search_box_text_color">#EFEFEF</color>
+
+    A6A6A6
 
 
 
