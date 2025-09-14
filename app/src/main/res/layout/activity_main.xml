@@ -430,7 +430,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="14dp"
                     android:gravity="center">
 
                     <de.hdodenhof.circleimageview.CircleImageView
