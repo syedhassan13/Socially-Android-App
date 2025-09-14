@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="10"
+    android:background="@color/white"
     tools:context=".ChattingScreen">
 
 
@@ -21,8 +22,8 @@
             android:layout_centerVertical="true"
             android:gravity="center">
             <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/chevron_left_brown"/>
 
             <RelativeLayout
@@ -31,8 +32,8 @@
                 android:layout_marginLeft="10dp">
 
                 <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:src="@color/sociallyLightBrown"
 
                     />
@@ -43,7 +44,7 @@
                     android:text="IS"
                     android:textColor="@color/white"
                     android:textStyle="bold"
-                    android:textSize="30sp" />
+                    android:textSize="20sp" />
 
             </RelativeLayout>
 
@@ -52,7 +53,7 @@
                 android:layout_height="wrap_content"
                 android:text="internshala"
                 android:textColor="@color/black"
-                android:textSize="22sp"
+                android:textSize="17sp"
                 android:layout_marginLeft="10dp"/>
 
 
@@ -66,12 +67,12 @@
             android:orientation="horizontal"
             android:layout_marginRight="20dp">
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/videocall_icon"/>
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/info_icon"
                 android:layout_marginLeft="20dp"/>
 
@@ -119,6 +120,85 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/chatting_box"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="3">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:src="@drawable/camera__filled_"/>
+
+        </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="start|center">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="15sp"
+                    android:hint="Message..."
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@color/darkGray"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="3">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/microphone_342"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/picture"
+                    android:layout_marginLeft="5dp"
+                    />
+
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/stickers"
+                    android:layout_marginLeft="5dp"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
 
     </RelativeLayout>
     <LinearLayout
