@@ -3,4 +3,5 @@
     <string name="sociallyText">Socially</string>
     <string name="create_an_account_and_sign_up">Create An Account and Sign Up</string>
     <string name="forgot_password">Forgot password?</string>
+    <string name="randomText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vehicula venenatis lacus, eget vestibulum orci hendrerit id. Donec sodales metus a semper maximus. </string>
 </resources>
