@@ -22,6 +22,7 @@
             android:layout_centerVertical="true"
             android:gravity="center">
             <ImageView
+                android:id="@+id/back"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:src="@drawable/chevron_left_brown"/>
@@ -67,6 +68,7 @@
             android:orientation="horizontal"
             android:layout_marginRight="20dp">
             <ImageView
+                android:id="@+id/videoChat"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/videocall_icon"/>

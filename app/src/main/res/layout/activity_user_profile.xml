@@ -41,6 +41,7 @@
         </LinearLayout>
 
         <ImageView
+            android:id="@+id/menu"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/menu"
@@ -194,6 +195,7 @@
             android:layout_weight="1"
             android:layout_marginTop="10dp">
            <androidx.appcompat.widget.AppCompatButton
+               android:id="@+id/editProfile"
                android:layout_width="match_parent"
                android:layout_height="30dp"
                android:background="@drawable/myprofile_btn"
@@ -635,6 +637,7 @@
         android:weightSum="5">
 
         <ImageView
+            android:id="@+id/home"
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_weight="1"
@@ -642,6 +645,7 @@
             android:layout_gravity="center"/>
 
         <ImageView
+            android:id="@+id/search"
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_weight="1"
@@ -649,6 +653,7 @@
             android:layout_gravity="center"/>
 
         <ImageView
+            android:id="@+id/create"
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_weight="1"
@@ -656,6 +661,7 @@
             android:layout_gravity="center"/>
 
         <ImageView
+            android:id="@+id/like"
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_weight="1"
@@ -663,6 +669,7 @@
             android:layout_gravity="center"/>
 
         <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dp"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"

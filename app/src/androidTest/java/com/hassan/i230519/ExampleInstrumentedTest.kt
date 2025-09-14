@@ -22,3 +22,40 @@ class ExampleInstrumentedTest {
         assertEquals("com.hassan.i230519", appContext.packageName)
     }
 }
+/*
+* @RunWith(AndroidJUnit4::class)
+class NavigationTest {
+
+    @get:Rule
+    var activityScenarioRule = ActivityScenarioRule(LoginActivity::class.java)
+
+    @Test
+    fun testNavigationToMainActivity() {
+        // Click login button
+        onView(withId(R.id.loginBtn)).perform(click())
+
+        // Check that MainActivity's title text is displayed
+        onView(withId(R.id.mainTitle))
+            .check(matches(isDisplayed()))
+    }
+}
+*/
+
+/*
+* @RunWith(AndroidJUnit4::class)
+class ButtonClickTest {
+
+    @get:Rule
+    var activityScenarioRule = ActivityScenarioRule(MainActivity::class.java)
+
+    @Test
+    fun testButtonClickUpdatesText() {
+        // Perform button click
+        onView(withId(R.id.updateBtn)).perform(click())
+
+        // Check that text is updated
+        onView(withId(R.id.resultText))
+            .check(matches(withText("Updated Successfully")))
+    }
+}
+*/

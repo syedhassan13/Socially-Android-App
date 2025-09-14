@@ -7,6 +7,7 @@ import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.AppCompatButton
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import de.hdodenhof.circleimageview.CircleImageView
@@ -28,9 +29,18 @@ class LoginPage : AppCompatActivity() {
 
 
         var backBtn = findViewById<ImageView>(R.id.loginPageBackIcon)
+        var loginBtn = findViewById<AppCompatButton>(R.id.loginBtn)
+
         backBtn.setOnClickListener {
-            val intent = Intent(this, RegistrationPage::class.java)
+
+            finish()
+        }
+        loginBtn.setOnClickListener {
+
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+            finishAffinity()
+
         }
 
 

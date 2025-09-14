@@ -7,6 +7,7 @@ import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.AppCompatButton
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import de.hdodenhof.circleimageview.CircleImageView
@@ -18,10 +19,14 @@ class SignUp : AppCompatActivity() {
         setContentView(R.layout.activity_sign_up)
 
         var backBtn = findViewById<ImageView>(R.id.signUpPageBackIcon)
+        var createBtn = findViewById<AppCompatButton>(R.id.createAccountBtn)
         backBtn.setOnClickListener {
-            val intent = Intent(this, RegistrationPage::class.java)
-            startActivity(intent)
+            finish()
         }
+        createBtn.setOnClickListener {
+            finish()
+        }
+
 
         var dp = findViewById<CircleImageView>(R.id.dp)
 

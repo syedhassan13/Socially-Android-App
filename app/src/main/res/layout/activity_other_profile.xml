@@ -16,6 +16,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp">
         <ImageView
+            android:id="@+id/back"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/chevron_left"
@@ -754,6 +755,7 @@
         android:weightSum="5">
 
         <ImageView
+            android:id="@+id/home"
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_weight="1"
@@ -761,6 +763,7 @@
             android:layout_gravity="center"/>
 
         <ImageView
+            android:id="@+id/search"
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_weight="1"
@@ -768,6 +771,7 @@
             android:layout_gravity="center"/>
 
         <ImageView
+            android:id="@+id/create"
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_weight="1"
@@ -775,6 +779,7 @@
             android:layout_gravity="center"/>
 
         <ImageView
+            android:id="@+id/like"
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_weight="1"
@@ -782,6 +787,7 @@
             android:layout_gravity="center"/>
 
         <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dp"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"

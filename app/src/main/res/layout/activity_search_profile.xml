@@ -17,6 +17,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp">
         <ImageView
+            android:id="@+id/back"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/chevron_left_brown"
@@ -100,6 +101,7 @@
                 android:orientation="vertical">
 
                 <RelativeLayout
+                    android:id="@+id/gotoMessage"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="20dp"
@@ -701,10 +703,14 @@
                         </LinearLayout>
 
                         <LinearLayout
+
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+
+                            >
                             <LinearLayout
+                                android:id="@+id/camera"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"

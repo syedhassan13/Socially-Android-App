@@ -15,11 +15,13 @@
         android:layout_weight="1">
 
         <ImageView
+            android:id="@+id/io"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/camera_icon"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginLeft="10dp"
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -35,6 +37,7 @@
             android:layout_centerVertical="true"
             android:layout_marginRight="10dp">
             <ImageView
+                android:id="@+id/createStory"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/create_post__new_"
@@ -100,6 +103,7 @@
                 android:background="@drawable/ring">
 
                 <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/myStory"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:src="@drawable/mydp"
@@ -131,9 +135,10 @@
                 android:background="@drawable/ring">
 
                 <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/otherStory"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/mydp"
+                    android:src="@drawable/maledp_1"
                     app:civ_border_width="2dp"
                     app:civ_border_color="@android:color/white"
                     android:scaleType="centerCrop"/>
@@ -142,7 +147,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Your Story"
+                android:text="Kiranne"
                 android:textColor="@color/black"/>
 
         </LinearLayout>
@@ -162,9 +167,10 @@
                 android:background="@drawable/ring">
 
                 <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/highlights"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/mydp"
+                    android:src="@drawable/maledp_1"
                     app:civ_border_width="2dp"
                     app:civ_border_color="@android:color/white"
                     android:scaleType="centerCrop"/>
@@ -173,37 +179,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Your Story"
-                android:textColor="@color/black"/>
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginRight="10dp"
-            android:gravity="center">
-            <LinearLayout
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:padding="4dp"
-                android:background="@drawable/ring">
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/mydp"
-                    app:civ_border_width="2dp"
-                    app:civ_border_color="@android:color/white"
-                    android:scaleType="centerCrop"/>
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Your Story"
+                android:text="Jashua"
                 android:textColor="@color/black"/>
 
         </LinearLayout>
@@ -224,7 +200,7 @@
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/mydp"
+                    android:src="@drawable/maledp_1"
                     app:civ_border_width="2dp"
                     app:civ_border_color="@android:color/white"
                     android:scaleType="centerCrop"/>
@@ -233,7 +209,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Your Story"
+                android:text="Simon"
                 android:textColor="@color/black"/>
 
         </LinearLayout>
@@ -263,7 +239,37 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Your Story"
+                android:text="Adam"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="4dp"
+                android:background="@drawable/ring">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/mydp"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@android:color/white"
+                    android:scaleType="centerCrop"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suri"
                 android:textColor="@color/black"/>
 
         </LinearLayout>
@@ -552,13 +558,15 @@
         android:weightSum="5">
 
         <ImageView
+            android:id="@+id/home"
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_weight="1"
-            android:src="@drawable/home"
+            android:src="@drawable/home__filled_"
             android:layout_gravity="center"/>
 
         <ImageView
+            android:id="@+id/search"
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_weight="1"
@@ -566,6 +574,7 @@
             android:layout_gravity="center"/>
 
         <ImageView
+            android:id="@+id/create"
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_weight="1"
@@ -573,6 +582,7 @@
             android:layout_gravity="center"/>
 
         <ImageView
+            android:id="@+id/like"
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_weight="1"
@@ -580,6 +590,7 @@
             android:layout_gravity="center"/>
 
         <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dp"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"

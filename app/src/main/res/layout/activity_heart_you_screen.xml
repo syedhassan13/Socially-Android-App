@@ -28,7 +28,8 @@
             android:orientation="vertical"
 
             android:layout_weight="1"
-            android:weightSum="3">
+            android:weightSum="3"
+            android:id="@+id/following">
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -1323,6 +1324,7 @@
         android:weightSum="5">
 
         <ImageView
+            android:id="@+id/home"
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_weight="1"
@@ -1330,6 +1332,7 @@
             android:layout_gravity="center"/>
 
         <ImageView
+            android:id="@+id/search"
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_weight="1"
@@ -1337,6 +1340,7 @@
             android:layout_gravity="center"/>
 
         <ImageView
+            android:id="@+id/create"
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_weight="1"
@@ -1344,13 +1348,15 @@
             android:layout_gravity="center"/>
 
         <ImageView
+            android:id="@+id/like"
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_weight="1"
-            android:src="@drawable/like"
+            android:src="@drawable/like__filled_"
             android:layout_gravity="center"/>
 
         <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dp"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"

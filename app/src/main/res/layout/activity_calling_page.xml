@@ -58,6 +58,7 @@
             android:layout_height="100dp"
             android:layout_marginEnd="50dp" >
             <ImageView
+                android:id="@+id/endCall"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:backgroundTint="@color/calling_icon_red"
